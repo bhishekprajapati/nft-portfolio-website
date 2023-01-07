@@ -35,8 +35,13 @@
     /* Text Buttons */
     .bttn {
         @apply text-white font-semibold text-xs leading-6 py-1 px-6 rounded-lg;
-        @apply hover:opacity-80 transition-opacity duration-200;
-        @apply active:opacity-100 active:scale-95 transition-transform duration-200;
+    }
+
+    .bttn-animated {
+        @apply transition-opacity duration-200;
+        @apply active:scale-95 transition-transform duration-200;
+        @apply hover:opacity-80;
+        @apply active:opacity-100;
     }
 
     .bttn-primary {
@@ -68,8 +73,15 @@
         @apply px-8;
     }
 
+    .i-bttn .bttn-icon {
+        @apply ml-2 text-2xl align-text-bottom;
+    }
+
     .bttn-icon {
         --ionicon-stroke-width: 2.5rem;
-        @apply ml-2 inline-block text-2xl align-text-bottom;
+        @apply block;
     }
+
+    /* Single Icon Buttons */
+
 }
