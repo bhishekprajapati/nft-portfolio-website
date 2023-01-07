@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    label {
+        @apply inline-block text-white text-sm leading-[1.71];
+    }
+}
+
 @layer components {
     .heading-1 {
         @apply text-[4rem] leading-[1.25];
