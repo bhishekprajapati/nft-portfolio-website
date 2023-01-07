@@ -3,3 +3,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .heading-1 {
+        @apply text-[4rem] leading-[1.25];
+    }
+
+    .heading-2 {
+        @apply text-[3.5rem] leading-[1.29];
+    }
+
+    .heading-3 {
+        @apply text-[2.5rem] leading-[1.4];
+    }
+
+    .heading-4 {
+        @apply text-[2rem] leading-[1.5];
+    }
+
+    .heading-5 {
+        @apply text-[1.5rem] leading-[1.67];
+    }
+
+    .heading-6 {
+        @apply text-[1rem] leading-[2];
+    }
+}
