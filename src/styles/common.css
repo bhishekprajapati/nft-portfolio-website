@@ -29,3 +29,47 @@
         @apply text-[1rem] leading-[2];
     }
 }
+
+/* Button components */
+@layer components {
+    /* Text Buttons */
+    .bttn {
+        @apply text-white font-semibold text-xs leading-6 py-1 px-6 rounded-lg;
+        @apply hover:opacity-80 transition-opacity duration-200;
+        @apply active:opacity-100 active:scale-95 transition-transform duration-200;
+    }
+
+    .bttn-primary {
+        @apply bg-blue;
+    }
+
+    .bttn-outlined {
+        @apply border border-white;
+    }
+
+    .bttn-md {
+        @apply px-8 py-2 text-sm leading-6;
+    }
+
+    .bttn-lg {
+        @apply px-10 py-2 text-[1rem] leading-8;
+    }
+
+    /* Text with icon buttons */
+    .i-bttn {
+        @apply px-4;
+    }
+
+    .i-bttn.bttn-md {
+        @apply px-6;
+    }
+
+    .i-bttn.bttn-lg {
+        @apply px-8;
+    }
+
+    .bttn-icon {
+        --ionicon-stroke-width: 2.5rem;
+        @apply ml-2 inline-block text-2xl align-text-bottom;
+    }
+}
