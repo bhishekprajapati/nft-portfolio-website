@@ -3,6 +3,7 @@ module.exports = {
   content: ['index.html'],
   theme: {
     colors: {
+      transparent: 'transparent',
       white: '#fff',
       black: '#000',
       navy: '#051139',
