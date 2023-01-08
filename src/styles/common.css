@@ -97,7 +97,7 @@
 
     .bttn-icon {
         --ionicon-stroke-width: 2.5rem;
-        @apply block;
+        @apply inline-block;
     }
 
     /* Single Icon Buttons */
