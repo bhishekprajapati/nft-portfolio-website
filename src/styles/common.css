@@ -34,6 +34,18 @@
     .heading-6 {
         @apply text-white text-[1rem] leading-[2];
     }
+
+    .text-body {
+        @apply text-white text-[1rem] leading-[2rem];
+    }
+
+    .text-caption {
+        @apply text-white text-[1rem] leading-[2rem];
+    }
+
+    .text-label {
+        @apply text-white text-sm leading-[1.71];
+    }
 }
 
 /* Button components */
