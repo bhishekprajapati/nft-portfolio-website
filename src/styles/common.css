@@ -121,3 +121,23 @@
         @apply text-[1rem] leading-[2rem];
     }
 }
+
+/* Links */
+@layer components {
+    .link {
+        @apply text-white text-[0.75rem] leading-[1.5rem];
+    }
+
+    .link .link-icon {
+        --ionicon-stroke-width: 2.5rem;
+        @apply ml-2 align-middle;
+    }
+
+    .link-md {
+        @apply text-[0.875rem] leading-[1.5rem];
+    }
+
+    .link-lg {
+        @apply text-[1rem] leading-[2rem];
+    }
+}
