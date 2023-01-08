@@ -95,6 +95,7 @@
 @layer components {
     /* Text fields */
     .form-field {
+        @apply text-white;
         @apply bg-transparent border rounded-lg py-2 px-4;
         @apply text-[0.75rem] leading-[1.5rem];
         @apply focus:outline-0;
