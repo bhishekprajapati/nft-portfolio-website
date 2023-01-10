@@ -21,6 +21,17 @@ module.exports = {
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],
     },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        md: '2.5rem',
+        xl: '4.5rem',
+      },
+    },
+    boxShadow: {
+      DEFAULT: '0px 24px 80px rgba(0, 0, 0, 0.8)',
+    },
     extend: {},
   },
   plugins: [],

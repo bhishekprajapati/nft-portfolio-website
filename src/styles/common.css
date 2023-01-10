@@ -141,3 +141,13 @@
         @apply text-[1rem] leading-[2rem];
     }
 }
+
+@layer components {
+    .nav-link.active {
+        @apply link link-md font-bold;
+    }
+    .nav-link {
+        @apply link link-md font-normal;
+        @apply hover:font-bold;
+    }
+}
