@@ -144,10 +144,10 @@
 
 @layer components {
     .nav-link.active {
-        @apply link link-md font-bold;
+        @apply link link-lg font-bold;
     }
     .nav-link {
-        @apply link link-md font-normal;
+        @apply link link-lg font-normal;
         @apply hover:font-bold;
     }
 }
