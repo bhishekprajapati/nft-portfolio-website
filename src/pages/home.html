@@ -10,42 +10,38 @@
 </head>
 
 <body class="bg-navy text-body">
-    <div class="relative overflow-hidden">
-        <div class="fixed z-50 top-0 left-0 right-0 bg-navy bg-opacity-80 backdrop-blur-3xl shadow">
-            <header class="container py-4 md:py-6 flex items-center">
-                <a href="/"><img width="40" height="40" src="../assets/favicon.svg" alt="site-logo"></a>
-                <input type="checkbox" id="hidden-nav-menu-toggler" class="
-        fixed left-[-100vw]
-        [&+nav_#close-icon]:hidden [&:checked+nav_#hamburger-icon]:hidden [&:checked+nav_#close-icon]:block
-        [&+nav_#nav-menu-items]:hidden md:[&+nav_#nav-menu-items]:!block [&:checked+nav_#nav-menu-items]:block
-        [&:checked+nav]:fixed [&:checked+nav]:bg-blue-dark [&:checked+nav]:inset-0
-        [&:checked+nav_#visible-nav-menu-toggler]:absolute [&:checked+nav_#visible-nav-menu-toggler]:bottom-0 [&:checked+nav_#visible-nav-menu-toggler]:left-[50%] [&:checked+nav_#visible-nav-menu-toggler]:-translate-x-[50%] [&:checked+nav_#visible-nav-menu-toggler]:-translate-y-[50%] [&:checked+nav_#visible-nav-menu-toggler]:bg-navy [&:checked+nav_#visible-nav-menu-toggler]:p-2
-      ">
-                <nav class="ml-auto md:ml-0 z-50">
-                    <div class="relative h-full">
-                        <ul class="p-6 text-center" role="list" id="nav-menu-items">
-                            <div class="[&>:not(:last-child)]:mb-4 md:[&>li]:!mb-0 md:flex md:gap-x-6">
-                                <li><a href="#" class="nav-link active" aria-current="true">Home</a></li>
-                                <li><a href="#" class="nav-link">NFT</a></li>
-                                <li><a href="#" class="nav-link">Roadmap</a></li>
-                                <li><a href="#" class="nav-link">About Us</a></li>
-                                <li><a href="#" class="nav-link">Contact Us</a></li>
-                            </div>
-                        </ul>
-                        <label class="block mr-5 md:hidden rounded-full" for="hidden-nav-menu-toggler"
-                            role="button" id="visible-nav-menu-toggler">
-                            <ion-icon class="block" name="menu-outline" size="large"
-                                id="hamburger-icon"></ion-icon>
-                            <ion-icon class="block" name="close-outline" size="large"
-                                id="close-icon"></ion-icon>
-                        </label>
-                    </div>
-                </nav>
-                <button type="button" class="md:ml-auto bttn bttn-primary bttn-animated bttn-md">Join
-                    Us</button>
-            </header>
-        </div>
-        <main class="mt-[5rem] md:mt-[10rem] relative z-40">
+    <div class="container">
+        <header class="py-4 md:py-6 flex items-center">
+            <a href="/"><img width="40" height="40" src="../assets/favicon.svg" alt="site-logo"></a>
+            <input type="checkbox" id="hidden-nav-menu-toggler" class="
+                fixed left-[-100vw]
+                [&+nav_#close-icon]:hidden [&:checked+nav_#hamburger-icon]:hidden [&:checked+nav_#close-icon]:block
+                [&+nav_#nav-menu-items]:hidden md:[&+nav_#nav-menu-items]:!block [&:checked+nav_#nav-menu-items]:block
+                [&:checked+nav]:fixed [&:checked+nav]:bg-blue-dark [&:checked+nav]:inset-0
+                [&:checked+nav_#visible-nav-menu-toggler]:absolute [&:checked+nav_#visible-nav-menu-toggler]:bottom-0 [&:checked+nav_#visible-nav-menu-toggler]:left-[50%] [&:checked+nav_#visible-nav-menu-toggler]:-translate-x-[50%] [&:checked+nav_#visible-nav-menu-toggler]:-translate-y-[50%] [&:checked+nav_#visible-nav-menu-toggler]:bg-navy [&:checked+nav_#visible-nav-menu-toggler]:p-2
+              ">
+            <nav class="ml-auto md:ml-0 z-50">
+              <div class="relative h-full">
+                <ul class="p-6 text-center" role="list" id="nav-menu-items">
+                  <div class="[&>:not(:last-child)]:mb-4 md:[&>li]:!mb-0 md:flex md:gap-x-6">
+                    <li><a href="#" class="nav-link active" aria-current="true">Home</a></li>
+                    <li><a href="#" class="nav-link">NFT</a></li>
+                    <li><a href="#" class="nav-link">Roadmap</a></li>
+                    <li><a href="#" class="nav-link">About Us</a></li>
+                    <li><a href="#" class="nav-link">Contact Us</a></li>
+                  </div>
+                </ul>
+                <label class="block mr-5 md:hidden rounded-full" for="hidden-nav-menu-toggler" role="button"
+                  id="visible-nav-menu-toggler">
+                  <ion-icon class="block" name="menu-outline" size="large" id="hamburger-icon"></ion-icon>
+                  <ion-icon class="block" name="close-outline" size="large" id="close-icon"></ion-icon>
+                </label>
+              </div>
+            </nav>
+            <button type="button" class="md:ml-auto bttn bttn-primary bttn-animated bttn-md">Join Us</button>
+        </header>
+    </div>
+      <main class="mt-[5rem] md:mt-[10rem] relative z-40">
             <section class="">
                 <div class="container pb-12 md:pb-16 xl:pb-24">
                     <div class="pt-4 md:pt-6 xl:pt-10 md:flex md:gap-10 lg:gap-16 xl:gap-24">
@@ -331,8 +327,6 @@
             src="../assets/hero-bg-pink-layer.svg" alt="">
         <img class="fixed z-0 right-0 md:right-[10%] bottom-[15%] md:bottom-[5%] translate-x-[50%] scale-[2] md:scale-105 pointer-events-none"
             src="../assets/hero-bg-blue-layer.svg" alt="">
-
-    </div>
 
     <footer class="mt-12 md:mt-16 xl:mt-24 py-6 md:py-10 container">
         <div class="flex items-center justify-between">
