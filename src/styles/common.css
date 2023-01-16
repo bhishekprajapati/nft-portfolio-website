@@ -151,3 +151,16 @@
         @apply hover:font-bold;
     }
 }
+
+@layer components {
+    @keyframes scale-animation {
+        100% {
+            transform: scale(2);
+        }
+    }
+
+    .scale-animation {
+        @apply animate-[scale-animation_10s_ease-in-out_infinite];
+        @apply direction-alternate;
+    }
+}

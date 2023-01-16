@@ -324,11 +324,11 @@
         </section>
     </main>
 
-    <img class="fixed z-0 right-0 md:right-[95%] top-0 md:top-[10%] translate-x-[50%] -translate-y-[20%] scale-[2] md:scale-110  pointer-events-none"
+    <img class="scale-animation fixed z-0 right-0 md:right-[95%] top-0 md:top-[10%] translate-x-[50%] -translate-y-[20%] scale-[2] md:scale-110  pointer-events-none"
         src="../assets/hero-bg-blue-layer.svg" alt="">
-    <img class="fixed z-0 left-0 md:left-[60%] top-[50%] md:top-0 -translate-x-[50%] -translate-y-[20%] scale-[1.9] md:scale-110 opacity-80 pointer-events-none"
-        src="../assets/hero-bg-pink-layer.svg" alt="">
-    <img class="fixed z-0 right-0 md:right-[10%] bottom-[15%] md:bottom-[5%] translate-x-[50%] scale-[2] md:scale-105 pointer-events-none"
+    <img class="scale-animation fixed z-0 left-0 md:left-[60%] top-[50%] md:top-0 -translate-x-[50%] -translate-y-[20%] scale-[1.9] md:scale-110 !opacity-50 pointer-events-none"
+        src="../assets/hero-bg-pink-layer.svg" alt="" id="layer-following-cursor">
+    <img class="scale-animation fixed z-0 right-0 md:right-[10%] bottom-[15%] md:bottom-[5%] translate-x-[50%] scale-[2] md:scale-105 pointer-events-none"
         src="../assets/hero-bg-blue-layer.svg" alt="">
 
     <footer class="mt-12 md:mt-16 xl:mt-24 py-6 md:py-10 container">
@@ -371,6 +371,17 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+
+    <script>
+        const layerFollowingCursor = document.getElementById('layer-following-cursor');
+
+        window.addEventListener('mousemove', e => {
+            layerFollowingCursor.style.top = `${e.clientY}px`;
+            layerFollowingCursor.style.left = `${e.clientX}px`;
+        });
+    </script>
 </body>
 
 </html>
