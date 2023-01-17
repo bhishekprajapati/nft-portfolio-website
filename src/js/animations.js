@@ -14,18 +14,16 @@ const soldItemCounterID = '#items-sold-counter';
 gsap.registerEffect({
     name: 'counter',
     effect: (target, config) => {
-        console.log(target);
         return gsap.to(target, {
             innerText: target[0].dataset.counterFinalValue,
-            duration: config.duration,
-            snap: config.snap,
-            ease: config.ease,    
+            ...config
         });
     },
     defaults: {
         duration: 2,
         snap: 'innerText',
         ease: 'power4.out',
+        delay: 0.4
     },
 });
 
