@@ -55,15 +55,15 @@
                             obcaecati! Provident nisi enim inventore!</p>
                         <ul class="my-4 md:mb-0 md:mt-6 flex [&>li]:w-full">
                             <li class="text-left">
-                                <span class="font-bold heading-4 md:heading-3">555</span><br>
+                                <span class="animate-counter font-bold heading-4 md:heading-3" data-counter-final-value="555" id="nfts-counter">0</span><br>
                                 <span class="text-label md:text-body text-color-disable">NFT Items</span>
                             </li>
                             <li class="text-center border-x">
-                                <span class="font-bold heading-4 md:heading-3">42</span><br>
+                                <span class="animate-counter font-bold heading-4 md:heading-3" data-counter-final-value="42" id="owners-counter">0</span><br>
                                 <span class="text-label md:text-body text-color-disable">Owners</span>
                             </li>
                             <li class="text-right">
-                                <span class="font-bold heading-4 md:heading-3">378</span><br>
+                                <span class="animate-counter font-bold heading-4 md:heading-3" data-counter-final-value="378" id="items-sold-counter">0</span><br>
                                 <span class="text-label md:text-body text-color-disable">Items Sold</span><br>
                             </li>
                         </ul>
@@ -90,11 +90,11 @@
 
         <section class="bg-purple py-6">
             <div class="container flex justify-around md:justify-between">
-                <em class="not-italic font-bold heading-5 xl:heading-4">Discount Sale</em>
-                <em class="not-italic font-bold heading-5 xl:heading-4 !text-transparent"
+                <em class="discount-tag not-italic font-bold heading-5 xl:heading-4">Discount Sale</em>
+                <em class="discount-tag not-italic font-bold heading-5 xl:heading-4 !text-transparent"
                     style="-webkit-text-stroke: 0.1rem white;">Up to 40%</em>
-                <em class="not-italic font-bold heading-5 xl:heading-4 hidden md:inline">Discount Sale</em>
-                <em class="not-italic font-bold heading-5 xl:heading-4 !text-transparent hidden md:inline"
+                <em class="discount-tag not-italic font-bold heading-5 xl:heading-4 hidden md:inline">Discount Sale</em>
+                <em class="discount-tag not-italic font-bold heading-5 xl:heading-4 !text-transparent hidden md:inline"
                     style="-webkit-text-stroke: 0.1rem white;">Up to 40%</em>
             </div>
         </section>
@@ -369,19 +369,9 @@
                     Prajapati</span></a>
         </div>
     </footer>
+    <script type="module" src="../js/animations.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-
-
-    <script>
-        const layerFollowingCursor = document.getElementById('layer-following-cursor');
-
-        window.addEventListener('mousemove', e => {
-            layerFollowingCursor.style.top = `${e.clientY}px`;
-            layerFollowingCursor.style.left = `${e.clientX}px`;
-        });
-    </script>
 </body>
 
 </html>
