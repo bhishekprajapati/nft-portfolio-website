@@ -24,11 +24,10 @@
                 <div class="relative h-full">
                     <ul class="p-6 text-center" role="list" id="nav-menu-items">
                         <div class="[&>:not(:last-child)]:mb-4 md:[&>li]:!mb-0 md:flex md:gap-x-6">
-                            <li><a href="#" class="nav-link active" aria-current="true">Home</a></li>
-                            <li><a href="#" class="nav-link">NFT</a></li>
-                            <li><a href="#" class="nav-link">Roadmap</a></li>
-                            <li><a href="#" class="nav-link">About Us</a></li>
-                            <li><a href="#" class="nav-link">Contact Us</a></li>
+                            <li><a href="/" class="nav-link active" aria-current="true">Home</a></li>
+                            <li><a href="./roadmap.html" class="nav-link">Roadmap</a></li>
+                            <li><a href="./about.html" class="nav-link">About Us</a></li>
+                            <li><a href="./contact.html" class="nav-link">Contact Us</a></li>
                         </div>
                     </ul>
                     <label class="block mr-5 md:hidden rounded-full" for="hidden-nav-menu-toggler" role="button"
@@ -68,9 +67,10 @@
                             </li>
                         </ul>
                     </header>
-                    <div class="flex-1">
+                    <div class="flex-1" style="transform-style: preserve-3d;" data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-speed="50" data-tilt-perspective="1000">
                         <picture
-                            class="overflow-hidden block relative mx-auto -mb-24 w-[85.36%] h-[19.5rem] bg-white rounded-xl shadow">
+                            class="overflow-hidden block relative mx-auto -mb-24 w-[85.36%] h-[19.5rem] bg-white rounded-xl shadow"
+                            style="transform: translateZ(2rem);">
                             <img class="w-full h-full object-center object-cover" src="../assets/nero-nft-img.png"
                                 alt="">
                         </picture>
@@ -129,7 +129,7 @@
                                     elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
-                            <div class="xl:flex-1 hidden xl:block bg-white shadow rounded-xl overflow-hidden">
+                            <div class="xl:flex-1 hidden xl:block bg-white shadow rounded-xl overflow-hidden" data-tilt="">
                                 <img class="w-full h-full object-cover object-center"
                                     src="../assets/feature-nft-img.png" alt="">
                             </div>

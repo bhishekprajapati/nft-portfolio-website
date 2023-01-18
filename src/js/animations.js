@@ -1,4 +1,5 @@
 import gsap from 'gsap';
+import 'vanilla-tilt';
 import { counterEffect } from './utils/gsap.effects';
 
 gsap.registerEffect(counterEffect);
