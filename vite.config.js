@@ -21,7 +21,7 @@ const prodConfig = defineConfig({
         outDir,
         rollupOptions: {
             input: {
-                home: resolve(root, 'home.html'),
+                index: resolve(root, 'index.html'),
                 about: resolve(root, 'about.html'),
                 contact: resolve(root, 'contact.html'),
                 roadmap: resolve(root, 'roadmap.html'),
