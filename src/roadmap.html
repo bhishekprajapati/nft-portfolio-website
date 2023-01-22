@@ -9,39 +9,41 @@
     <title>Roadmap | NFT Portfolio</title>
 </head>
 
-<body class="bg-navy text-body">
-    <main>
-        <section class="relative overflow-hidden">
-            <div class="relative z-50 container pb-12 md:pb-16 xl:pb-24">
-                <header class="py-4 md:py-6 flex items-center">
-                    <a href="/"><img width="40" height="40" src="./assets/favicon.svg" alt="site-logo"></a>
-                    <input type="checkbox" id="hidden-nav-menu-toggler" class="
+<body class="bg-navy text-body overflow-x-hidden">
+    <div class="container">
+        <header class="py-4 md:py-6 flex items-center">
+            <a href="/"><img width="40" height="40" src="./assets/favicon.svg" alt="site-logo"></a>
+            <input type="checkbox" id="hidden-nav-menu-toggler" class="
                 fixed left-[-100vw]
                 [&+nav_#close-icon]:hidden [&:checked+nav_#hamburger-icon]:hidden [&:checked+nav_#close-icon]:block
                 [&+nav_#nav-menu-items]:hidden md:[&+nav_#nav-menu-items]:!block [&:checked+nav_#nav-menu-items]:block
                 [&:checked+nav]:fixed [&:checked+nav]:bg-blue-dark [&:checked+nav]:inset-0
                 [&:checked+nav_#visible-nav-menu-toggler]:absolute [&:checked+nav_#visible-nav-menu-toggler]:bottom-0 [&:checked+nav_#visible-nav-menu-toggler]:left-[50%] [&:checked+nav_#visible-nav-menu-toggler]:-translate-x-[50%] [&:checked+nav_#visible-nav-menu-toggler]:-translate-y-[50%] [&:checked+nav_#visible-nav-menu-toggler]:bg-navy [&:checked+nav_#visible-nav-menu-toggler]:p-2
               ">
-                    <nav class="ml-auto md:ml-0 z-50">
-                        <div class="relative h-full">
-                            <ul class="p-6 text-center" role="list" id="nav-menu-items">
-                                <div class="[&>:not(:last-child)]:mb-4 md:[&>li]:!mb-0 md:flex md:gap-x-6">
-                                    <li><a href="/" class="nav-link">Home</a></li>
-                                    <li><a href="./roadmap.html" class="nav-link active" aria-current="true">Roadmap</a></li>
-                                    <li><a href="./about.html" class="nav-link">About Us</a>
-                                    </li>
-                                    <li><a href="./contact.html" class="nav-link">Contact Us</a></li>
-                                </div>
-                            </ul>
-                            <label class="block mr-5 md:hidden rounded-full" for="hidden-nav-menu-toggler" role="button"
-                                id="visible-nav-menu-toggler">
-                                <ion-icon class="block" name="menu-outline" size="large" id="hamburger-icon"></ion-icon>
-                                <ion-icon class="block" name="close-outline" size="large" id="close-icon"></ion-icon>
-                            </label>
+            <nav class="ml-auto md:ml-0 z-50">
+                <div class="relative h-full">
+                    <ul class="p-6 text-center" role="list" id="nav-menu-items">
+                        <div class="[&>:not(:last-child)]:mb-4 md:[&>li]:!mb-0 md:flex md:gap-x-6">
+                            <li><a href="/" class="nav-link">Home</a></li>
+                            <li><a href="./roadmap.html" class="nav-link active" aria-current="true">Roadmap</a></li>
+                            <li><a href="./about.html" class="nav-link">About Us</a></li>
+                            <li><a href="./contact.html" class="nav-link">Contact Us</a></li>
                         </div>
-                    </nav>
-                    <button type="button" class="md:ml-auto bttn bttn-primary bttn-animated bttn-md">Join Us</button>
-                </header>
+                    </ul>
+                    <label class="block mr-5 md:hidden rounded-full" for="hidden-nav-menu-toggler" role="button"
+                        id="visible-nav-menu-toggler">
+                        <ion-icon class="block" name="menu-outline" size="large" id="hamburger-icon"></ion-icon>
+                        <ion-icon class="block" name="close-outline" size="large" id="close-icon"></ion-icon>
+                    </label>
+                </div>
+            </nav>
+            <button type="button" class="md:ml-auto bttn bttn-primary bttn-animated bttn-md">Join Us</button>
+        </header>
+    </div>
+
+    <main class="relative z-40">
+        <section>
+            <div class="relative z-50 container pb-12 md:pb-16 xl:pb-24">
                 <div class="pt-4 md:pt-6 xl:pt-10">
                     <header class="text-center">
                         <span class="font-bold heading-6 !text-cyan">Roadmap</span>
@@ -196,12 +198,6 @@
                     </ul>
                 </div>
             </div>
-            <img class="absolute right-0 top-0 translate-x-[50%] -translate-y-[20%] scale-[2] md:scale-110  pointer-events-none"
-                src="./assets/hero-bg-blue-layer.svg" alt="" loading="lazy">
-            <img class="absolute left-0 top-[50%] md:top-0 -translate-x-[50%]  scale-[1.2] md:scale-80 opacity-80 pointer-events-none"
-                src="./assets/hero-bg-pink-layer.svg" alt="" loading="lazy">
-            <img class="absolute right-0 md:right-[10%] bottom-[15%] md:bottom-[5%] translate-x-[50%] scale-[2] md:scale-105 pointer-events-none"
-                src="./assets/hero-bg-blue-layer.svg" alt="" loading="lazy">
         </section>
         <section class="relative overflow-hidden">
             <div class="relative z-50 container py-12 md:py-16 xl:py-24">
@@ -225,12 +221,26 @@
                     </div>
                 </div>
             </div>
-            <img class="absolute right-0 top-0 translate-x-[50%] -translate-y-[10%] md:scale-75  pointer-events-none"
+            <!-- <img class="absolute right-0 top-0 translate-x-[50%] -translate-y-[10%] md:scale-75  pointer-events-none"
                 src="./assets/hero-bg-blue-layer.svg" alt="" loading="lazy">
             <img class="absolute left-0 top-[50%] -translate-x-[50%] -translate-y-[50%]  scale-[1] md:scale-80 opacity-80 pointer-events-none"
-                src="./assets/hero-bg-pink-layer.svg" alt="" loading="lazy">
+                src="./assets/hero-bg-pink-layer.svg" alt="" loading="lazy"> -->
         </section>
     </main>
+
+    <img class="scale-animation fixed z-0 right-0 md:right-[95%] top-0 md:top-[10%] translate-x-[50%] -translate-y-[20%] scale-[2] md:scale-110  pointer-events-none"
+        src="./assets/hero-bg-blue-layer.svg" alt="">
+    <img class="scale-animation fixed z-0 left-0 md:left-[50%] top-[50%] md:top-0 -translate-x-[50%] -translate-y-[20%] scale-[1.9] md:scale-110 !opacity-50 pointer-events-none"
+        src="./assets/hero-bg-pink-layer.svg" alt="">
+    <img class="scale-animation fixed z-0 right-0 md:right-[10%] bottom-[15%] md:bottom-[5%] translate-x-[50%] scale-[2] md:scale-105 pointer-events-none"
+        src="./assets/hero-bg-blue-layer.svg" alt="">
+    <img class="absolute right-0 top-0 translate-x-[50%] -translate-y-[20%] scale-[2] md:scale-110  pointer-events-none"
+        src="./assets/hero-bg-blue-layer.svg" alt="" loading="lazy">
+    <img class="absolute left-0 top-[50%] md:top-0 -translate-x-[50%]  scale-[1.2] md:scale-80 opacity-80 pointer-events-none"
+        src="./assets/hero-bg-pink-layer.svg" alt="" loading="lazy">
+    <img class="absolute right-0 md:right-[10%] bottom-[15%] md:bottom-[5%] translate-x-[50%] scale-[2] md:scale-105 pointer-events-none"
+        src="./assets/hero-bg-blue-layer.svg" alt="" loading="lazy">
+
     <footer class="mt-12 md:mt-16 xl:mt-24 py-6 md:py-10 container">
         <div class="flex items-center justify-between">
             <div>
