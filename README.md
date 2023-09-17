@@ -1,3 +1,3 @@
 # Preview
 
-![Website Preview Image](https://nft-portfolio.abhishekprajapati.com/preview/nft-portflio.png)
+![Website Preview Image](https://abhishekprajapati.com/assets/preview/nft-portfolio.png)
