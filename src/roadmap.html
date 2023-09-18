@@ -1,286 +1,384 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/index.css">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon.svg"
+      type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="./styles/index.css" />
     <title>Roadmap | NFT Portfolio</title>
-</head>
+  </head>
 
-<body class="bg-navy text-body overflow-x-hidden">
+  <body class="bg-navy text-body overflow-x-hidden">
     <div class="container">
-        <header class="py-4 md:py-6 flex items-center">
-            <a href="/"><img width="40" height="40" src="./assets/favicon.svg" alt="site-logo"></a>
-            <input type="checkbox" id="hidden-nav-menu-toggler" class="
-                fixed left-[-100vw]
-                [&+nav_#close-icon]:hidden [&:checked+nav_#hamburger-icon]:hidden [&:checked+nav_#close-icon]:block
-                [&+nav_#nav-menu-items]:hidden md:[&+nav_#nav-menu-items]:!block [&:checked+nav_#nav-menu-items]:block
-                [&:checked+nav]:fixed [&:checked+nav]:bg-blue-dark [&:checked+nav]:inset-0
-                [&:checked+nav_#visible-nav-menu-toggler]:absolute [&:checked+nav_#visible-nav-menu-toggler]:bottom-0 [&:checked+nav_#visible-nav-menu-toggler]:left-[50%] [&:checked+nav_#visible-nav-menu-toggler]:-translate-x-[50%] [&:checked+nav_#visible-nav-menu-toggler]:-translate-y-[50%] [&:checked+nav_#visible-nav-menu-toggler]:bg-navy [&:checked+nav_#visible-nav-menu-toggler]:p-2
-              ">
-            <nav class="ml-auto md:ml-0 z-50">
-                <div class="relative h-full">
-                    <ul class="p-6 text-center" role="list" id="nav-menu-items">
-                        <div class="[&>:not(:last-child)]:mb-4 md:[&>li]:!mb-0 md:flex md:gap-x-6">
-                            <li><a href="/" class="nav-link">Home</a></li>
-                            <li><a href="./roadmap.html" class="nav-link active" aria-current="true">Roadmap</a></li>
-                            <li><a href="./about.html" class="nav-link">About Us</a></li>
-                            <li><a href="./contact.html" class="nav-link">Contact Us</a></li>
-                        </div>
-                    </ul>
-                    <label class="block mr-5 md:hidden rounded-full" for="hidden-nav-menu-toggler" role="button"
-                        id="visible-nav-menu-toggler">
-                        <ion-icon class="block" name="menu-outline" size="large" id="hamburger-icon"></ion-icon>
-                        <ion-icon class="block" name="close-outline" size="large" id="close-icon"></ion-icon>
-                    </label>
-                </div>
-            </nav>
-            <button type="button" class="md:ml-auto bttn bttn-primary bttn-animated bttn-md">Join Us</button>
-        </header>
+      <header class="py-4 md:py-6 flex items-center">
+        <a href="/">
+          <img
+            width="40"
+            height="40"
+            src="./assets/favicon.svg"
+            alt="site-logo" />
+        </a>
+        <input
+          type="checkbox"
+          id="hidden-nav-menu-toggler"
+          class="fixed left-[-100vw] [&+nav_#close-icon]:hidden [&:checked+nav_#hamburger-icon]:hidden [&:checked+nav_#close-icon]:block [&+nav_#nav-menu-items]:hidden md:[&+nav_#nav-menu-items]:!block [&:checked+nav_#nav-menu-items]:block [&:checked+nav]:fixed [&:checked+nav]:bg-blue-dark [&:checked+nav]:inset-0 [&:checked+nav_#visible-nav-menu-toggler]:absolute [&:checked+nav_#visible-nav-menu-toggler]:bottom-0 [&:checked+nav_#visible-nav-menu-toggler]:left-[50%] [&:checked+nav_#visible-nav-menu-toggler]:-translate-x-[50%] [&:checked+nav_#visible-nav-menu-toggler]:-translate-y-[50%] [&:checked+nav_#visible-nav-menu-toggler]:bg-navy [&:checked+nav_#visible-nav-menu-toggler]:p-2" />
+        <nav class="ml-auto md:ml-0 z-50">
+          <div class="relative h-full">
+            <ul
+              class="p-6 text-center"
+              role="list"
+              id="nav-menu-items">
+              <div class="[&>:not(:last-child)]:mb-4 md:[&>li]:!mb-0 md:flex md:gap-x-6">
+                <li>
+                  <a
+                    href="/"
+                    class="nav-link">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="./roadmap.html"
+                    class="nav-link active"
+                    aria-current="true">
+                    Roadmap
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="./about.html"
+                    class="nav-link">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="./contact.html"
+                    class="nav-link">
+                    Contact Us
+                  </a>
+                </li>
+              </div>
+            </ul>
+            <label
+              class="block mr-5 md:hidden rounded-full"
+              for="hidden-nav-menu-toggler"
+              role="button"
+              id="visible-nav-menu-toggler">
+              <ion-icon
+                class="block"
+                name="menu-outline"
+                size="large"
+                id="hamburger-icon"></ion-icon>
+              <ion-icon
+                class="block"
+                name="close-outline"
+                size="large"
+                id="close-icon"></ion-icon>
+            </label>
+          </div>
+        </nav>
+        <button
+          type="button"
+          class="md:ml-auto bttn bttn-primary bttn-animated bttn-md">
+          Join Us
+        </button>
+      </header>
     </div>
 
     <main class="relative z-40">
-        <section>
-            <div class="relative z-50 container pb-12 md:pb-16 xl:pb-24">
-                <div class="pt-4 md:pt-6 xl:pt-10">
-                    <header class="text-center">
-                        <span class="font-bold heading-6 !text-cyan">Roadmap</span>
-                        <div class="md:w-[66%] md:mx-auto">
-                            <h1 class="my-2 md:my-4 font-bold heading-3 lg:heading-2 xl:heading-1">See How We Create The
-                                Yorfy</h1>
-                            <p class="text-color-disable">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua.
-                            </p>
-                        </div>
+      <section>
+        <div class="relative z-50 container pb-12 md:pb-16 xl:pb-24">
+          <div class="pt-4 md:pt-6 xl:pt-10">
+            <header class="text-center">
+              <span class="font-bold heading-6 !text-cyan">Roadmap</span>
+              <div class="md:w-[66%] md:mx-auto">
+                <h1 class="my-2 md:my-4 font-bold heading-3 lg:heading-2 xl:heading-1">See How We Create The Yorfy</h1>
+                <p class="text-color-disable">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </header>
+            <ul class="mt-12 md:mt-16 lg:mt-24 [&>:not(:last-child)]:mb-12 md:[&>:not(:last-child)]:mb-16 lg:[&>:not(:last-child)]:mb-24">
+              <li>
+                <div class="lg:flex lg:gap-x-28 lg:items-center">
+                  <div class="mb-6 lg:mb-0">
+                    <picture class="block lg:max-w-[29rem] lg:max-h-[29rem] h-80 rounded-xl overflow-hidden">
+                      <source
+                        media="(min-width: 64em)"
+                        srcset="
+                          https://unsplash.com/photos/TwieXZwVQvw/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjczNTI4MDcz&force=true&w=1920
+                        " />
+                      <source
+                        media="(min-width: 90em)"
+                        srcset="
+                          https://unsplash.com/photos/TwieXZwVQvw/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjczNTI4MDcz&force=true&w=2400
+                        " />
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="https://unsplash.com/photos/TwieXZwVQvw/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjczNTI4MDcz&force=true&w=640"
+                        alt=""
+                        loading="lazy" />
+                    </picture>
+                  </div>
+                  <div class="lg:flex-1">
+                    <header class="">
+                      <span class="font-bold heading-6 !text-cyan">20% Progress</span>
+                      <h2 class="my-2 md:my-4 font-bold heading-4 lg:heading-2">Created Collection</h2>
                     </header>
-                    <ul
-                        class="mt-12 md:mt-16 lg:mt-24 [&>:not(:last-child)]:mb-12 md:[&>:not(:last-child)]:mb-16 lg:[&>:not(:last-child)]:mb-24">
-                        <li>
-                            <div class="lg:flex lg:gap-x-28 lg:items-center">
-                                <div class="mb-6 lg:mb-0">
-                                    <picture
-                                        class="block lg:max-w-[29rem] lg:max-h-[29rem] h-80 rounded-xl overflow-hidden">
-                                        <source media="(min-width: 64em)"
-                                            srcset="https://unsplash.com/photos/TwieXZwVQvw/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjczNTI4MDcz&force=true&w=1920">
-                                        <source media="(min-width: 90em)"
-                                            srcset="https://unsplash.com/photos/TwieXZwVQvw/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjczNTI4MDcz&force=true&w=2400">
-                                        <img class="w-full h-full object-cover object-center"
-                                            src="https://unsplash.com/photos/TwieXZwVQvw/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjczNTI4MDcz&force=true&w=640"
-                                            alt="" loading="lazy">
-                                    </picture>
-                                </div>
-                                <div class="lg:flex-1">
-                                    <header class="">
-                                        <span class="font-bold heading-6 !text-cyan">20% Progress</span>
-                                        <h2 class="my-2 md:my-4 font-bold heading-4 lg:heading-2">Created Collection
-                                        </h2>
-                                    </header>
-                                    <p class="text-color-disable">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="lg:flex lg:flex-row-reverse lg:gap-x-28 lg:items-center">
-                                <div class="mb-6 lg:mb-0">
-                                    <picture
-                                        class="block lg:w-[29rem] lg:max-w-[29rem] lg:max-h-[29rem] h-80 rounded-xl overflow-hidden">
-                                        <source media="(min-width: 64em)"
-                                            srcset="https://unsplash.com/photos/HvdRVnyV0PQ/download?force=true&w=1920">
-                                        <source media="(min-width: 90em)"
-                                            srcset="https://unsplash.com/photos/HvdRVnyV0PQ/download?force=true&w=2400">
-                                        <img class="w-full h-full object-cover object-center"
-                                            src="https://unsplash.com/photos/HvdRVnyV0PQ/download?force=true&w=640"
-                                            alt="" loading="lazy">
-                                    </picture>
-                                </div>
-                                <div class="lg:flex-1">
-                                    <header class="">
-                                        <span class="font-bold heading-6 !text-cyan">40% Progress</span>
-                                        <h2 class="my-2 md:my-4 font-bold heading-4 lg:heading-2">Publications</h2>
-                                    </header>
-                                    <p class="text-color-disable">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="lg:flex lg:gap-x-28 lg:items-center">
-                                <div class="mb-6 lg:mb-0">
-                                    <picture
-                                        class="block lg:w-[29rem] lg:max-w-[29rem] lg:max-h-[29rem] h-80 rounded-xl overflow-hidden">
-                                        <source media="(min-width: 64em)"
-                                            srcset="https://unsplash.com/photos/ynmPY1MLwMs/download?force=true&w=1920">
-                                        <source media="(min-width: 90em)"
-                                            srcset="https://unsplash.com/photos/ynmPY1MLwMs/download?force=true&w=2400">
-                                        <img class="w-full h-full object-cover object-center"
-                                            src="https://unsplash.com/photos/ynmPY1MLwMs/download?force=true&w=640"
-                                            alt="" loading="lazy">
-                                    </picture>
-                                </div>
-                                <div class="lg:flex-1">
-                                    <header class="">
-                                        <span class="font-bold heading-6 !text-cyan">60% Progress</span>
-                                        <h2 class="my-2 md:my-4 font-bold heading-4 lg:heading-2">Live Events</h2>
-                                    </header>
-                                    <p class="text-color-disable">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="lg:flex lg:flex-row-reverse lg:gap-x-28 lg:items-center">
-                                <div class="mb-6 lg:mb-0">
-                                    <picture
-                                        class="block lg:w-[29rem] lg:max-w-[29rem] lg:max-h-[29rem] h-80 rounded-xl overflow-hidden">
-                                        <source media="(min-width: 64em)"
-                                            srcset="https://unsplash.com/photos/fyZOY0HiF9A/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjczNTE5NTY1&force=true&w=1920">
-                                        <source media="(min-width: 90em)"
-                                            srcset="https://unsplash.com/photos/fyZOY0HiF9A/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjczNTE5NTY1&force=true&w=2400">
-                                        <img class="w-full h-full object-cover object-center"
-                                            src="https://unsplash.com/photos/fyZOY0HiF9A/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjczNTE5NTY1&force=true&w=640"
-                                            alt="" loading="lazy">
-                                    </picture>
-                                </div>
-                                <div class="lg:flex-1">
-                                    <header class="">
-                                        <span class="font-bold heading-6 !text-cyan">80% Progress</span>
-                                        <h2 class="my-2 md:my-4 font-bold heading-4 lg:heading-2">Prizes</h2>
-                                    </header>
-                                    <p class="text-color-disable">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="lg:flex lg:gap-x-28 lg:items-center">
-                                <div class="mb-6 lg:mb-0">
-                                    <picture
-                                        class="block lg:max-w-[29rem] lg:max-h-[29rem] h-80 rounded-xl overflow-hidden">
-                                        <source media="(min-width: 64em)"
-                                            srcset="https://unsplash.com/photos/AHCmAX0k_J4/download?force=true&w=1920">
-                                        <source media="(min-width: 90em)"
-                                            srcset="https://unsplash.com/photos/AHCmAX0k_J4/download?force=true&w=2400">
-                                        <img class="w-full h-full object-cover object-center"
-                                            src="https://unsplash.com/photos/AHCmAX0k_J4/download?force=true&w=640"
-                                            alt="" loading="lazy">
-                                    </picture>
-                                </div>
-                                <div class="lg:flex-1">
-                                    <header class="">
-                                        <span class="font-bold heading-6 !text-cyan">100% Progress</span>
-                                        <h2 class="my-2 md:my-4 font-bold heading-4 lg:heading-2">Metaverse</h2>
-                                    </header>
-                                    <p class="text-color-disable">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                    <p class="text-color-disable">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                      enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
                 </div>
-            </div>
-        </section>
-        <section class="relative overflow-hidden">
-            <div class="relative z-50 container py-12 md:py-16 xl:py-24">
-                <div class="pt-4 md:pt-6 xl:pt-10">
-                    <header class="text-center">
-                        <span class="font-bold heading-6 !text-cyan">Join Our Team</span>
-                        <div class="md:w-[80%] md:mx-auto">
-                            <h1 class="my-2 md:my-4 font-bold heading-3 lg:heading-2 xl:heading-1">Wan’t to Contribute
-                                Develop The Yorfy? Send Your Resume Now</h1>
-                            <p class="text-color-disable">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua.
-                            </p>
-                        </div>
+              </li>
+              <li>
+                <div class="lg:flex lg:flex-row-reverse lg:gap-x-28 lg:items-center">
+                  <div class="mb-6 lg:mb-0">
+                    <picture class="block lg:w-[29rem] lg:max-w-[29rem] lg:max-h-[29rem] h-80 rounded-xl overflow-hidden">
+                      <source
+                        media="(min-width: 64em)"
+                        srcset="https://unsplash.com/photos/HvdRVnyV0PQ/download?force=true&w=1920" />
+                      <source
+                        media="(min-width: 90em)"
+                        srcset="https://unsplash.com/photos/HvdRVnyV0PQ/download?force=true&w=2400" />
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="https://unsplash.com/photos/HvdRVnyV0PQ/download?force=true&w=640"
+                        alt=""
+                        loading="lazy" />
+                    </picture>
+                  </div>
+                  <div class="lg:flex-1">
+                    <header class="">
+                      <span class="font-bold heading-6 !text-cyan">40% Progress</span>
+                      <h2 class="my-2 md:my-4 font-bold heading-4 lg:heading-2">Publications</h2>
                     </header>
-                    <div class="text-center mt-6">
-                        <button type="button" class="bttn i-bttn bttn-primary bttn-animated bttn-lg">Send resume
-                            <ion-icon class="ml-4 align-middle" name="cloud-upload-outline"
-                                size="large"></ion-icon></button>
-                    </div>
+                    <p class="text-color-disable">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                      enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
                 </div>
+              </li>
+              <li>
+                <div class="lg:flex lg:gap-x-28 lg:items-center">
+                  <div class="mb-6 lg:mb-0">
+                    <picture class="block lg:w-[29rem] lg:max-w-[29rem] lg:max-h-[29rem] h-80 rounded-xl overflow-hidden">
+                      <source
+                        media="(min-width: 64em)"
+                        srcset="https://unsplash.com/photos/ynmPY1MLwMs/download?force=true&w=1920" />
+                      <source
+                        media="(min-width: 90em)"
+                        srcset="https://unsplash.com/photos/ynmPY1MLwMs/download?force=true&w=2400" />
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="https://unsplash.com/photos/ynmPY1MLwMs/download?force=true&w=640"
+                        alt=""
+                        loading="lazy" />
+                    </picture>
+                  </div>
+                  <div class="lg:flex-1">
+                    <header class="">
+                      <span class="font-bold heading-6 !text-cyan">60% Progress</span>
+                      <h2 class="my-2 md:my-4 font-bold heading-4 lg:heading-2">Live Events</h2>
+                    </header>
+                    <p class="text-color-disable">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                      enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="lg:flex lg:flex-row-reverse lg:gap-x-28 lg:items-center">
+                  <div class="mb-6 lg:mb-0">
+                    <picture class="block lg:w-[29rem] lg:max-w-[29rem] lg:max-h-[29rem] h-80 rounded-xl overflow-hidden">
+                      <source
+                        media="(min-width: 64em)"
+                        srcset="
+                          https://unsplash.com/photos/fyZOY0HiF9A/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjczNTE5NTY1&force=true&w=1920
+                        " />
+                      <source
+                        media="(min-width: 90em)"
+                        srcset="
+                          https://unsplash.com/photos/fyZOY0HiF9A/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjczNTE5NTY1&force=true&w=2400
+                        " />
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="https://unsplash.com/photos/fyZOY0HiF9A/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjczNTE5NTY1&force=true&w=640"
+                        alt=""
+                        loading="lazy" />
+                    </picture>
+                  </div>
+                  <div class="lg:flex-1">
+                    <header class="">
+                      <span class="font-bold heading-6 !text-cyan">80% Progress</span>
+                      <h2 class="my-2 md:my-4 font-bold heading-4 lg:heading-2">Prizes</h2>
+                    </header>
+                    <p class="text-color-disable">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                      enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="lg:flex lg:gap-x-28 lg:items-center">
+                  <div class="mb-6 lg:mb-0">
+                    <picture class="block lg:max-w-[29rem] lg:max-h-[29rem] h-80 rounded-xl overflow-hidden">
+                      <source
+                        media="(min-width: 64em)"
+                        srcset="https://unsplash.com/photos/AHCmAX0k_J4/download?force=true&w=1920" />
+                      <source
+                        media="(min-width: 90em)"
+                        srcset="https://unsplash.com/photos/AHCmAX0k_J4/download?force=true&w=2400" />
+                      <img
+                        class="w-full h-full object-cover object-center"
+                        src="https://unsplash.com/photos/AHCmAX0k_J4/download?force=true&w=640"
+                        alt=""
+                        loading="lazy" />
+                    </picture>
+                  </div>
+                  <div class="lg:flex-1">
+                    <header class="">
+                      <span class="font-bold heading-6 !text-cyan">100% Progress</span>
+                      <h2 class="my-2 md:my-4 font-bold heading-4 lg:heading-2">Metaverse</h2>
+                    </header>
+                    <p class="text-color-disable">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                      enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="relative overflow-hidden">
+        <div class="relative z-50 container py-12 md:py-16 xl:py-24">
+          <div class="pt-4 md:pt-6 xl:pt-10">
+            <header class="text-center">
+              <span class="font-bold heading-6 !text-cyan">Join Our Team</span>
+              <div class="md:w-[80%] md:mx-auto">
+                <h1 class="my-2 md:my-4 font-bold heading-3 lg:heading-2 xl:heading-1">
+                  Wan’t to Contribute Develop The Yorfy? Send Your Resume Now
+                </h1>
+                <p class="text-color-disable">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </header>
+            <div class="text-center mt-6">
+              <button
+                type="button"
+                class="bttn i-bttn bttn-primary bttn-animated bttn-lg">
+                Send resume
+                <ion-icon
+                  class="ml-4 align-middle"
+                  name="cloud-upload-outline"
+                  size="large"></ion-icon>
+              </button>
             </div>
-            <!-- <img class="absolute right-0 top-0 translate-x-[50%] -translate-y-[10%] md:scale-75  pointer-events-none"
-                src="./assets/hero-bg-blue-layer.svg" alt="" loading="lazy">
-            <img class="absolute left-0 top-[50%] -translate-x-[50%] -translate-y-[50%]  scale-[1] md:scale-80 opacity-80 pointer-events-none"
-                src="./assets/hero-bg-pink-layer.svg" alt="" loading="lazy"> -->
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <img class="scale-animation fixed z-0 right-0 md:right-[95%] top-0 md:top-[10%] translate-x-[50%] -translate-y-[20%] scale-[2] md:scale-110  pointer-events-none"
-        src="./assets/hero-bg-blue-layer.svg" alt="">
-    <img class="scale-animation fixed z-0 left-0 md:left-[50%] top-[50%] md:top-0 -translate-x-[50%] -translate-y-[20%] scale-[1.9] md:scale-110 !opacity-50 pointer-events-none"
-        src="./assets/hero-bg-pink-layer.svg" alt="">
-    <img class="scale-animation fixed z-0 right-0 md:right-[10%] bottom-[15%] md:bottom-[5%] translate-x-[50%] scale-[2] md:scale-105 pointer-events-none"
-        src="./assets/hero-bg-blue-layer.svg" alt="">
-    <img class="absolute right-0 top-0 translate-x-[50%] -translate-y-[20%] scale-[2] md:scale-110  pointer-events-none"
-        src="./assets/hero-bg-blue-layer.svg" alt="" loading="lazy">
-    <img class="absolute left-0 top-[50%] md:top-0 -translate-x-[50%]  scale-[1.2] md:scale-80 opacity-80 pointer-events-none"
-        src="./assets/hero-bg-pink-layer.svg" alt="" loading="lazy">
-    <img class="absolute right-0 md:right-[10%] bottom-[15%] md:bottom-[5%] translate-x-[50%] scale-[2] md:scale-105 pointer-events-none"
-        src="./assets/hero-bg-blue-layer.svg" alt="" loading="lazy">
+    <img
+      class="scale-animation fixed z-0 right-0 md:right-[95%] top-0 md:top-[10%] translate-x-[50%] -translate-y-[20%] scale-[2] md:scale-110 pointer-events-none"
+      src="./assets/hero-bg-blue-layer.svg"
+      alt="" />
+    <img
+      class="scale-animation fixed z-0 left-0 md:left-[50%] top-[50%] md:top-0 -translate-x-[50%] -translate-y-[20%] scale-[1.9] md:scale-110 !opacity-50 pointer-events-none"
+      src="./assets/hero-bg-pink-layer.svg"
+      alt="" />
+    <img
+      class="scale-animation fixed z-0 right-0 md:right-[10%] bottom-[15%] md:bottom-[5%] translate-x-[50%] scale-[2] md:scale-105 pointer-events-none"
+      src="./assets/hero-bg-blue-layer.svg"
+      alt="" />
+    <img
+      class="absolute right-0 top-0 translate-x-[50%] -translate-y-[20%] scale-[2] md:scale-110 pointer-events-none"
+      src="./assets/hero-bg-blue-layer.svg"
+      alt=""
+      loading="lazy" />
+    <img
+      class="absolute left-0 top-[50%] md:top-0 -translate-x-[50%] scale-[1.2] md:scale-80 opacity-80 pointer-events-none"
+      src="./assets/hero-bg-pink-layer.svg"
+      alt=""
+      loading="lazy" />
+    <img
+      class="absolute right-0 md:right-[10%] bottom-[15%] md:bottom-[5%] translate-x-[50%] scale-[2] md:scale-105 pointer-events-none"
+      src="./assets/hero-bg-blue-layer.svg"
+      alt=""
+      loading="lazy" />
 
     <footer class="mt-12 md:mt-16 xl:mt-24 py-6 md:py-10 container">
-        <div class="flex items-center justify-between">
-            <div>
-                <span><img class="mr-2 inline-block w-10 h-10" src="./assets/favicon.svg" alt="site-logo"></span>
-                <span class="align-middle font-bold heading-6 md:heading-5">YORFY</span>
-            </div>
-            <ul class="flex items-center gap-x-2">
-                <li>
-                    <a href="#">
-                        <ion-icon class="block fill-white text-xl pointer-events-none" name="logo-facebook"></ion-icon>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <ion-icon class="block fill-white text-xl pointer-events-none" name="logo-discord"></ion-icon>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <ion-icon class="block fill-white text-xl pointer-events-none" name="logo-linkedin"></ion-icon>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <ion-icon class="block fill-white text-xl pointer-events-none" name="logo-youtube"></ion-icon>
-                    </a>
-                </li>
-            </ul>
+      <div class="flex items-center justify-between">
+        <div>
+          <span>
+            <img
+              class="mr-2 inline-block w-10 h-10"
+              src="./assets/favicon.svg"
+              alt="site-logo" />
+          </span>
+          <span class="align-middle font-bold heading-6 md:heading-5">YORFY</span>
         </div>
-        <div class="my-6 border-b border-blue"></div>
-        <div class="text-center md:flex md:justify-between">
-            <h3>
-                &#169; All rights reserved
-            </h3>
-            <a href="https://github.com/bhishekprajapati" target="_blank">Coded by <span class="text-cyan">Abhishek
-                    Prajapati</span></a>
-        </div>
+        <ul class="flex items-center gap-x-2">
+          <li>
+            <a href="#">
+              <ion-icon
+                class="block fill-white text-xl pointer-events-none"
+                name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon
+                class="block fill-white text-xl pointer-events-none"
+                name="logo-discord"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon
+                class="block fill-white text-xl pointer-events-none"
+                name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon
+                class="block fill-white text-xl pointer-events-none"
+                name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="my-6 border-b border-blue"></div>
+      <div class="text-center md:flex md:justify-between">
+        <h3>&#169; All rights reserved</h3>
+        <a
+          href="https://github.com/bhishekprajapati"
+          target="_blank">
+          Coded by <span class="text-cyan">Abhishek Prajapati</span>
+        </a>
+      </div>
     </footer>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>
