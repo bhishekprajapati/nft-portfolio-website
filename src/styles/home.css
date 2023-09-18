@@ -1,8 +1,8 @@
-@import url('./common.css');
+@import url("./common.css");
 
 @layer components {
-    .nav-menu {
-        @apply fixed top-0 left-0 bottom-0 bg-blue-dark;
-        @apply md:static md:inline-block md:bg-transparent;
-    }
+  .nav-menu {
+    @apply fixed top-0 left-0 bottom-0 bg-blue-dark;
+    @apply md:static md:inline-block md:bg-transparent;
+  }
 }

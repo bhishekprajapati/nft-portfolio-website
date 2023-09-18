@@ -1,166 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    label {
-        @apply inline-block text-white text-sm leading-[1.71];
-    }
+  label {
+    @apply inline-block text-white text-sm leading-[1.71];
+  }
 }
 
 @layer components {
-    .heading-1 {
-        @apply text-white text-[4rem] leading-[1.25];
-    }
+  .heading-1 {
+    @apply text-white text-[4rem] leading-[1.25];
+  }
 
-    .heading-2 {
-        @apply text-white text-[3.5rem] leading-[1.29];
-    }
+  .heading-2 {
+    @apply text-white text-[3.5rem] leading-[1.29];
+  }
 
-    .heading-3 {
-        @apply text-white text-[2.5rem] leading-[1.4];
-    }
+  .heading-3 {
+    @apply text-white text-[2.5rem] leading-[1.4];
+  }
 
-    .heading-4 {
-        @apply text-white text-[2rem] leading-[1.5];
-    }
+  .heading-4 {
+    @apply text-white text-[2rem] leading-[1.5];
+  }
 
-    .heading-5 {
-        @apply text-white text-[1.5rem] leading-[1.67];
-    }
+  .heading-5 {
+    @apply text-white text-[1.5rem] leading-[1.67];
+  }
 
-    .heading-6 {
-        @apply text-white text-[1rem] leading-[2];
-    }
+  .heading-6 {
+    @apply text-white text-[1rem] leading-[2];
+  }
 
-    .text-body {
-        @apply text-white text-[1rem] leading-[2rem];
-    }
+  .text-body {
+    @apply text-white text-[1rem] leading-[2rem];
+  }
 
-    .text-caption {
-        @apply text-white text-[1rem] leading-[2rem];
-    }
+  .text-caption {
+    @apply text-white text-[1rem] leading-[2rem];
+  }
 
-    .text-label {
-        @apply text-white text-sm leading-[1.71];
-    }
+  .text-label {
+    @apply text-white text-sm leading-[1.71];
+  }
 }
 
 /* Button components */
 @layer components {
-    /* Text Buttons */
-    .bttn {
-        @apply text-white font-semibold text-xs leading-6 py-1 px-6 rounded-lg;
-    }
+  /* Text Buttons */
+  .bttn {
+    @apply text-white font-semibold text-xs leading-6 py-1 px-6 rounded-lg;
+  }
 
-    .bttn-animated {
-        @apply transition-opacity duration-200;
-        @apply active:scale-95 transition-transform duration-200;
-        @apply hover:opacity-80;
-        @apply active:opacity-100;
-    }
+  .bttn-animated {
+    @apply transition-opacity duration-200;
+    @apply active:scale-95 transition-transform duration-200;
+    @apply hover:opacity-80;
+    @apply active:opacity-100;
+  }
 
-    .bttn-primary {
-        @apply bg-blue;
-    }
+  .bttn-primary {
+    @apply bg-blue;
+  }
 
-    .bttn-outlined {
-        @apply border border-white;
-    }
+  .bttn-outlined {
+    @apply border border-white;
+  }
 
-    .bttn-md {
-        @apply px-8 py-2 text-sm leading-6;
-    }
+  .bttn-md {
+    @apply px-8 py-2 text-sm leading-6;
+  }
 
-    .bttn-lg {
-        @apply px-10 py-2 text-[1rem] leading-8;
-    }
+  .bttn-lg {
+    @apply px-10 py-2 text-[1rem] leading-8;
+  }
 
-    /* Text with icon buttons */
-    .i-bttn {
-        @apply px-4;
-    }
+  /* Text with icon buttons */
+  .i-bttn {
+    @apply px-4;
+  }
 
-    .i-bttn.bttn-md {
-        @apply px-6;
-    }
+  .i-bttn.bttn-md {
+    @apply px-6;
+  }
 
-    .i-bttn.bttn-lg {
-        @apply px-8;
-    }
+  .i-bttn.bttn-lg {
+    @apply px-8;
+  }
 
-    .i-bttn .bttn-icon {
-        @apply ml-2 text-2xl align-text-bottom;
-    }
+  .i-bttn .bttn-icon {
+    @apply ml-2 text-2xl align-text-bottom;
+  }
 
-    .bttn-icon {
-        --ionicon-stroke-width: 2.5rem;
-        @apply inline-block;
-    }
+  .bttn-icon {
+    --ionicon-stroke-width: 2.5rem;
+    @apply inline-block;
+  }
 
-    /* Single Icon Buttons */
-
+  /* Single Icon Buttons */
 }
 
 @layer components {
-    /* Text fields */
-    .form-field {
-        @apply text-white;
-        @apply bg-transparent border rounded-lg py-2 px-4;
-        @apply text-[0.75rem] leading-[1.5rem];
-        @apply focus:outline-0;
-    }
-    
-    .form-field-md {
-        @apply text-[0.875rem] leading-[1.5rem];
-    }
-    
-    .form-field-lg {
-        @apply text-[1rem] leading-[2rem];
-    }
+  /* Text fields */
+  .form-field {
+    @apply text-white;
+    @apply bg-transparent border rounded-lg py-2 px-4;
+    @apply text-[0.75rem] leading-[1.5rem];
+    @apply focus:outline-0;
+  }
+
+  .form-field-md {
+    @apply text-[0.875rem] leading-[1.5rem];
+  }
+
+  .form-field-lg {
+    @apply text-[1rem] leading-[2rem];
+  }
 }
 
 /* Links */
 @layer components {
-    .link {
-        @apply text-white text-[0.75rem] leading-[1.5rem];
-    }
+  .link {
+    @apply text-white text-[0.75rem] leading-[1.5rem];
+  }
 
-    .link .link-icon {
-        --ionicon-stroke-width: 2.5rem;
-        @apply ml-2 align-middle;
-    }
+  .link .link-icon {
+    --ionicon-stroke-width: 2.5rem;
+    @apply ml-2 align-middle;
+  }
 
-    .link-md {
-        @apply text-[0.875rem] leading-[1.5rem];
-    }
+  .link-md {
+    @apply text-[0.875rem] leading-[1.5rem];
+  }
 
-    .link-lg {
-        @apply text-[1rem] leading-[2rem];
-    }
+  .link-lg {
+    @apply text-[1rem] leading-[2rem];
+  }
 }
 
 @layer components {
-    .nav-link.active {
-        @apply link link-lg font-bold;
-    }
-    .nav-link {
-        @apply link link-lg font-normal;
-        @apply hover:font-bold;
-    }
+  .nav-link.active {
+    @apply link link-lg font-bold;
+  }
+  .nav-link {
+    @apply link link-lg font-normal;
+    @apply hover:font-bold;
+  }
 }
 
 @layer components {
-    @keyframes scale-animation {
-        100% {
-            transform: scale(2);
-        }
+  @keyframes scale-animation {
+    100% {
+      transform: scale(2);
     }
+  }
 
-    .scale-animation {
-        @apply animate-[scale-animation_10s_ease-in-out_infinite];
-        @apply direction-alternate;
-    }
+  .scale-animation {
+    @apply animate-[scale-animation_10s_ease-in-out_infinite];
+    @apply direction-alternate;
+  }
 }
